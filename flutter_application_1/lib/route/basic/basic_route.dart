@@ -9,8 +9,16 @@ class BasicRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomScaffold(
-      body: const Center(
-        child: Text('basic'),
+      body: GetBuilder(
+        init: BasicRouteController(),
+        builder: (controller) {
+          return Center(child: Builder(builder: (context) {
+            if (controller.isLoading) {
+              return const Text('now loading..');
+            }
+            return const Text('basic');
+          }));
+        },
       ),
     );
   }

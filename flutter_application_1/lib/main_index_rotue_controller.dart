@@ -3,7 +3,7 @@ import 'package:flutter_application_1/route/index/index_route.dart';
 import 'package:flutter_application_1/route/index/index_route2.dart';
 import 'package:get/get.dart';
 
-class CustomScaffoldController extends GetxController {
+class MainIndexRouteController extends GetxController {
   int currentIndex = 0;
 
   updateIndex(int index) {

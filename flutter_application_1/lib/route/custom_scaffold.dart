@@ -3,8 +3,8 @@ import 'package:flutter_application_1/route/custom_scaffold_controller.dart';
 import 'package:get/get.dart';
 
 class CustomScaffold extends StatelessWidget {
-  Widget body;
-  CustomScaffold({super.key, required this.body});
+  final Widget body;
+  const CustomScaffold({super.key, required this.body});
 
   @override
   Widget build(BuildContext context) {

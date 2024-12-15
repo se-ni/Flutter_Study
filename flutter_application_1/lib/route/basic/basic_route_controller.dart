@@ -6,6 +6,9 @@ import 'package:get/get.dart';
 
 class BasicRouteController extends GetxController {
   int currentIndex = 0;
+
+  int click = 0;
+
   bool isLoading = true;
 
   @override
@@ -25,6 +28,11 @@ class BasicRouteController extends GetxController {
       case 2:
         Get.to(const IndexRoute2());
     }
+    update();
+  }
+
+  addNum() {
+    click++;
     update();
   }
 

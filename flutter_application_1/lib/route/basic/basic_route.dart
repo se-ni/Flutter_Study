@@ -16,7 +16,17 @@ class BasicRoute extends StatelessWidget {
             if (controller.isLoading) {
               return const Text('now loading..');
             }
-            return const Text('basic');
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text('basic'),
+                ElevatedButton(
+                    onPressed: () {
+                      controller.addNum();
+                    },
+                    child: Text(controller.click.toString()))
+              ],
+            );
           }));
         },
       ),

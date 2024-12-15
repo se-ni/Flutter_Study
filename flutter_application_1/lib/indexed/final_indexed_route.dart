@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/indexed/final_indexede_route_controller.dart';
+import 'package:flutter_application_1/indexed/final_indexed_route_controller.dart';
 import 'package:get/get.dart';
 
 class FinalIndexedRoute extends StatelessWidget {
@@ -13,10 +13,16 @@ class FinalIndexedRoute extends StatelessWidget {
           return Scaffold(
             body: IndexedStack(
               index: controller.currentIndex,
-              children: [
-                Text('1'),
-                Text('2'),
-                Text('3'),
+              children: const [
+                Center(
+                  child: Text('1'),
+                ),
+                Center(
+                  child: Text('2'),
+                ),
+                Center(
+                  child: Text('3'),
+                ),
               ],
             ),
             bottomNavigationBar: BottomNavigationBar(

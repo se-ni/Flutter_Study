@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/main_index_rotue_controller.dart';
+import 'package:flutter_application_1/main_index_route_controller.dart';
 import 'package:flutter_application_1/route/basic/basic_route.dart';
 import 'package:flutter_application_1/route/index/index_route.dart';
 import 'package:flutter_application_1/route/index/index_route2.dart';

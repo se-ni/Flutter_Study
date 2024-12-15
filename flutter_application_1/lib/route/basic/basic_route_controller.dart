@@ -22,11 +22,17 @@ class BasicRouteController extends GetxController {
 
     switch (currentIndex) {
       case 0:
-        Get.to(const BasicRoute());
+        Get.offAll(
+          const BasicRoute(),
+        );
       case 1:
-        Get.to(const IndexRoute());
+        Get.offAll(
+          const IndexRoute(),
+        );
       case 2:
-        Get.to(const IndexRoute2());
+        Get.offAll(
+          const IndexRoute2(),
+        );
     }
     update();
   }

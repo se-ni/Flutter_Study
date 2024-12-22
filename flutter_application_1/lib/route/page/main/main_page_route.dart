@@ -7,11 +7,6 @@ import 'package:get/get.dart';
 class MainPageRoute extends StatelessWidget {
   const MainPageRoute({super.key});
 
-  final List<Widget> pages = const [
-    Page1Route(),
-    Page2Route(),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return GetBuilder(

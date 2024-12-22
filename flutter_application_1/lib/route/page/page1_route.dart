@@ -5,8 +5,25 @@ class Page1Route extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('1'),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const Center(
+          child: Text('1'),
+        ),
+        PopupMenuButton(itemBuilder: (BuildContext context) {
+          return const [
+            PopupMenuItem(
+              value: '1',
+              child: Center(child: Text('button 1')),
+            ),
+            PopupMenuItem(
+              value: '2',
+              child: Center(child: Text('button 2')),
+            ),
+          ];
+        })
+      ],
     );
   }
 }

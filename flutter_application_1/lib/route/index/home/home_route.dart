@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/route/home/home_route_controller.dart';
+import 'package:flutter_application_1/route/index/home/home_route_controller.dart';
 import 'package:flutter_application_1/route/index/index1_route.dart';
 import 'package:flutter_application_1/route/index/index2_route.dart';
 import 'package:flutter_application_1/route/index/index3_route.dart';

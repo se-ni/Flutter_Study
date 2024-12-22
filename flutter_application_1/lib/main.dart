@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/route/home/home_route.dart';
+import 'package:flutter_application_1/route/index/home/home_route.dart';
+// import 'package:flutter_application_1/route/page/main/main_page_route.dart';
+import 'package:flutter_application_1/route/sample/sample.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -11,8 +13,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
-      home: HomeRoute(),
+    return GetMaterialApp(
+      home:
+          //HomeRoute(),
+          // MainPageRoute(),
+          BottomNavigationBarExample(),
     );
   }
 }

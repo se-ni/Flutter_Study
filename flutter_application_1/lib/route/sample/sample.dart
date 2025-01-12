@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/route/sample/page_one.dart';
-import 'package:flutter_application_1/route/sample/page-three.dart';
+import 'package:flutter_application_1/route/sample/page_three.dart';
 import 'package:flutter_application_1/route/sample/page_two.dart';
 
 // * stateful 이나 stateless 위젯으로 만들면, bottom navigation에서
 // 라우팅 할때, 상태가 유지되지 않는다. *
 
 class BottomNavigationBarExample extends StatefulWidget {
+  const BottomNavigationBarExample({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _BottomNavigationBarExampleState createState() =>
       _BottomNavigationBarExampleState();
 }

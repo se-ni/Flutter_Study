@@ -9,7 +9,7 @@ class Pages {
   static List<GetPage> pages = [
     GetPage(name: '/', page: () => const MainPageRoute()),
     GetPage(name: '/page1', page: () => const Page1Route()),
-    GetPage(name: '/page2', page: () => const Page2Route()),
+    GetPage(name: '/page2', page: () => Page2Route()),
     GetPage(name: '/page3', page: () => const Page3Route()),
     GetPage(name: '/page4', page: () => const Page4Route()),
   ];

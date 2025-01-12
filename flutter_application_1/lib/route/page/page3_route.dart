@@ -16,7 +16,7 @@ class Page3Route extends StatelessWidget {
                 onPressed: () {
                   Get.back();
                 },
-                child: Text('back'),
+                child: const Text('back'),
               ),
             ),
           );

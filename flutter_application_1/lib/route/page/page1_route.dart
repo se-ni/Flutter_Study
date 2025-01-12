@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/route/page/controller/page1_route_controller.dart';
+
 import 'package:get/get.dart';
 
 class Page1Route extends StatelessWidget {

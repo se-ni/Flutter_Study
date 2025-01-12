@@ -16,8 +16,8 @@ class MainPageRoute extends StatelessWidget {
           body: Center(
             child: IndexedStack(
               index: controller.selectedIndex, // 현재 선택된 페이지 인덱스
-              children: const [
-                Page1Route(),
+              children: [
+                const Page1Route(),
                 Page2Route(),
               ],
             ),
